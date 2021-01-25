@@ -1,4 +1,4 @@
-export default interface Car{
+export default interface CarType{
     id: number;
     name: string;
     country: string;
