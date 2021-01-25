@@ -10,7 +10,7 @@
             <td>{{ car.id }}</td>
             <td>{{ car.name }}</td>
             <td>{{ car.country }}</td>
-            <td><a href="brand/{{car.id}}">Details</a></td>
+            <td><a [routerLink]="['brand', car.id]">Details</a></td>
         </tr>
     </table>
 </div>

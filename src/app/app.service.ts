@@ -20,4 +20,7 @@ export class Service{
         //returning the copy of an array
         return this.cars.slice();
     }
+    getSingleCar(id: number){
+        return this.cars[id];
+    }
 }
