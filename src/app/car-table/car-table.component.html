@@ -1,1 +1,16 @@
-<p>car-table works!</p>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Details</th>
+        </tr>
+        <tr *ngFor="let car of cars">
+            <td>{{ car.id }}</td>
+            <td>{{ car.name }}</td>
+            <td>{{ car.country }}</td>
+            <td><a href="brand/{{car.id}}">Details</a></td>
+        </tr>
+    </table>
+</div>

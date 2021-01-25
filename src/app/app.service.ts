@@ -15,4 +15,9 @@ export class Service{
         new Car(9, 'Opel', 'Germany'),
         new Car(10, 'Alfa Romeo', 'Italy')
     ];
+
+    getCars(){
+        //returning the copy of an array
+        return this.cars.slice();
+    }
 }
