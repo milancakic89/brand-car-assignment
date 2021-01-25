@@ -4,10 +4,12 @@ import { Service } from './app.service';
 
 
 import { AppComponent } from './app.component';
+import { CarTableComponent } from './car-table/car-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarTableComponent
   ],
   imports: [
     BrowserModule
