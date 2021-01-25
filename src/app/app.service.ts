@@ -13,7 +13,8 @@ export class Service{
         new Car(7, 'Audi', 'Germany'),
         new Car(8, 'BMW', 'Germany'),
         new Car(9, 'Opel', 'Germany'),
-        new Car(10, 'Alfa Romeo', 'Italy')
+        new Car(10, 'Alfa Romeo', 'Italy'),
+        new Car(11, 'Aston Martin', 'United Kingdom')
     ];
 
     getCars(){

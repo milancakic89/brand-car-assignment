@@ -1,16 +1,11 @@
 <div>
+    <h1>Car Table</h1>
     <table>
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Country</th>
-            <th>Details</th>
+            <th>Car Brands</th>
         </tr>
         <tr *ngFor="let car of cars">
-            <td>{{ car.id }}</td>
-            <td>{{ car.name }}</td>
-            <td>{{ car.country }}</td>
-            <td><a [routerLink]="['brand', car.id]">Details</a></td>
+            <td><a [routerLink]="['brand', car.id]">{{car.name}}</a></td>
         </tr>
     </table>
 </div>

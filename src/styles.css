@@ -2,7 +2,8 @@
 table{
     border: 1px solid gray;
     padding: 0;
-    width: 50%;
+    min-width: 300px;
+    max-width: 700px;
     margin: 0 auto;
 }
 tr{
@@ -21,4 +22,5 @@ td{
 }
 a{
     text-decoration: none;
+    color: rgb(1, 83, 190);
 }
