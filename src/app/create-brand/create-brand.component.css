@@ -1,0 +1,19 @@
+.new-brand{
+    border: 1px solid gray;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+input{
+    display: inline-block;
+    padding: 7px;
+    margin: 5px 0;
+    width: 100%;
+}
+button{
+    border: none;
+}
+
+.invalid{
+    background-color: gray;
+}

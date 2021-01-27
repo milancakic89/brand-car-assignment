@@ -1,12 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 table{
     border: 1px solid gray;
     padding: 0;
-    min-width: 300px;
-    max-width: 700px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
 }
 tr{
@@ -27,29 +36,34 @@ a{
     text-decoration: none;
     color: rgb(1, 83, 190);
 }
-.btn-back{
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px 20px;
+
+.btn{
+    padding: 10px 15px;
     border-radius: 4px;
     display: inline-block;
+    text-decoration: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.ml-small{
+    margin-left: 10px;
+}
+.btn-secondary{ 
     background-color: rgb(83, 83, 83);
     color: #fff;
 }
-.btn-new{
-    display: inline-block;
-    padding: 10px 15px;
+.btn-primary{
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-    border-radius: 4px;
-
 }
-.btn-edit{
+.btn-warning{
     color: #212529;
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 4px;
     background-color: #ffc107;
     border-color: #ffc107
+}
+.btn-success{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745
 }

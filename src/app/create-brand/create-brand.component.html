@@ -1,3 +1,11 @@
 <div class="container">
-    
+    <h1>Crete New Brand</h1>
+    <form class="new-brand" (ngSubmit)="saveChanges(f)" #f="ngForm">
+            <label for="brand">Brand</label><br>
+            <input name="brand" id="brand" value="" ngModel required autocomplete="off"/><br>
+            <label for="country">Country</label><br>
+            <input name="country" id="country" value="" ngModel required autocomplete="off"/><br>
+            <button type="submit" [ngClass]='!f.valid ? "invalid" : ""' [disabled]="!f.valid" class="btn btn-success">Save</button>
+    </form>
+    <a class="btn btn-secondary" [routerLink]="['']">Back</a>
 </div>

@@ -25,4 +25,7 @@ export class Service{
     getSingleBrand(id: number): BrandType {
         return this.brands.filter(brand => brand.id === id)[0];
     }
+    createNewBrand(id: number, name: string, country: string){
+        this.brands.push(new Brand(id, name, country));
+    }
 }
