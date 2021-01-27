@@ -5,20 +5,20 @@ import { Service } from './app.service';
 
 
 import { AppComponent } from './app.component';
-import { CarTableComponent } from './car-table/car-table.component';
-import { CarDetailsComponent } from './car-details/car-details.component';
+import { BrandsTableComponent } from './brands-table/brands-table.component';
+import { BrandDetailsComponent } from './brand-details/brand-details.component';
 
 const routes: Routes = [
-  { path: 'brand/:id', component: CarDetailsComponent },
-  { path: '', component: CarTableComponent }
+  { path: 'brand/:id', component: BrandDetailsComponent },
+  { path: '', component: BrandsTableComponent }
   
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarTableComponent,
-    CarDetailsComponent
+    BrandsTableComponent,
+    BrandDetailsComponent
   ],
   imports: [
     BrowserModule,

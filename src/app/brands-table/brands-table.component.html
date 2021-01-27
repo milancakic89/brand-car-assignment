@@ -1,0 +1,11 @@
+<div>
+    <h1>Brands Table</h1>
+    <table>
+        <tr>
+            <th>Brand</th>
+        </tr>
+        <tr *ngFor="let brand of brands">
+            <td><a [routerLink]="['brand', brand.id]">{{brand.name}}</a></td>
+        </tr>
+    </table>
+</div>

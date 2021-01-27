@@ -1,27 +1,28 @@
-import  CarType  from './model/car.interface';
-import { Car } from './model/car.model';
+
+import  BrandType  from './model/brand.interface';
+import { Brand } from './model/brand.model';
 
 export class Service{
-    cars: CarType[] = [
-        new Car(0, 'Honda', 'Japan'),
-        new Car(1, 'Lexus', 'Japan'),
-        new Car(2, 'Toyota', 'Japan'),
-        new Car(3, 'Nissan', 'Japan'),
-        new Car(4, 'Citroen', 'France'),
-        new Car(5, 'Peugeot', 'France'),
-        new Car(6, 'Renault', 'Japan'),
-        new Car(7, 'Audi', 'Germany'),
-        new Car(8, 'BMW', 'Germany'),
-        new Car(9, 'Opel', 'Germany'),
-        new Car(10, 'Alfa Romeo', 'Italy'),
-        new Car(11, 'Aston Martin', 'United Kingdom')
+    brands: BrandType[] = [
+        new Brand(0, 'Honda', 'Japan'),
+        new Brand(1, 'Lexus', 'Japan'),
+        new Brand(2, 'Toyota', 'Japan'),
+        new Brand(3, 'Nissan', 'Japan'),
+        new Brand(4, 'Citroen', 'France'),
+        new Brand(5, 'Peugeot', 'France'),
+        new Brand(6, 'Renault', 'Japan'),
+        new Brand(7, 'Audi', 'Germany'),
+        new Brand(8, 'BMW', 'Germany'),
+        new Brand(9, 'Opel', 'Germany'),
+        new Brand(10, 'Alfa Romeo', 'Italy'),
+        new Brand(11, 'Aston Martin', 'United Kingdom')
     ];
 
-    getCars(){
+    getBrands(){
         //returning the copy of an array
-        return this.cars.slice();
+        return this.brands.slice();
     }
-    getSingleCar(id: number){
-        return this.cars[id];
+    getSingleBrand(id: number) {
+        return this.brands.filter(brand => brand.id === id);
     }
 }

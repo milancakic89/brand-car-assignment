@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import   CarType  from '../model/car.interface';
+import   BrandType  from '../model/brand.interface';
 import { Service } from '../app.service';
 
 @Component({
-  selector: 'app-car-details',
-  templateUrl: './car-details.component.html',
-  styleUrls: ['./car-details.component.css']
+  selector: 'app-brand-details',
+  templateUrl: './brand-details.component.html',
+  styleUrls: ['./brand-details.component.css']
 })
-export class CarDetailsComponent implements OnInit {
+export class BrandDetailsComponent implements OnInit {
 
-  car: CarType = {};
+  brand: any;
   fetched: boolean = false;
   constructor(private route: ActivatedRoute,
               private service: Service) { }
@@ -18,7 +18,8 @@ export class CarDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe( params =>{
         const id = +params['id'];
-        this.car = this.service.getSingleCar(id);
+        this.brand = this.service.getSingleBrand(id);
+        console.log('Happens', this.brand)
         this.fetched = true;
     })
   }
