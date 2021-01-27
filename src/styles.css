@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 table{
     border: 1px solid gray;
     padding: 0;
@@ -23,4 +26,30 @@ td{
 a{
     text-decoration: none;
     color: rgb(1, 83, 190);
+}
+.btn-back{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+}
+.btn-new{
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 4px;
+
+}
+.btn-edit{
+    color: #212529;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #ffc107;
+    border-color: #ffc107
 }

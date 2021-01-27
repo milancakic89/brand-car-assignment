@@ -22,7 +22,7 @@ export class Service{
         //returning the copy of an array
         return this.brands.slice();
     }
-    getSingleBrand(id: number) {
-        return this.brands.filter(brand => brand.id === id);
+    getSingleBrand(id: number): BrandType {
+        return this.brands.filter(brand => brand.id === id)[0];
     }
 }

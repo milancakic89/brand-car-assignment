@@ -10,7 +10,7 @@ import { Service } from '../app.service';
 })
 export class BrandDetailsComponent implements OnInit {
 
-  brand: any;
+  brand: BrandType = {};
   fetched: boolean = false;
   constructor(private route: ActivatedRoute,
               private service: Service) { }
@@ -19,7 +19,6 @@ export class BrandDetailsComponent implements OnInit {
     this.route.params.subscribe( params =>{
         const id = +params['id'];
         this.brand = this.service.getSingleBrand(id);
-        console.log('Happens', this.brand)
         this.fetched = true;
     })
   }

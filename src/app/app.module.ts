@@ -7,9 +7,11 @@ import { Service } from './app.service';
 import { AppComponent } from './app.component';
 import { BrandsTableComponent } from './brands-table/brands-table.component';
 import { BrandDetailsComponent } from './brand-details/brand-details.component';
+import { CreateBrandComponent } from './create-brand/create-brand.component';
 
 const routes: Routes = [
   { path: 'brand/:id', component: BrandDetailsComponent },
+  { path: 'create', component: CreateBrandComponent },
   { path: '', component: BrandsTableComponent }
   
 ]
@@ -18,7 +20,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     BrandsTableComponent,
-    BrandDetailsComponent
+    BrandDetailsComponent,
+    CreateBrandComponent
   ],
   imports: [
     BrowserModule,
