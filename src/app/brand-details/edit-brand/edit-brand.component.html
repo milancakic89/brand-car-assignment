@@ -1,10 +1,12 @@
 <div class="container">
     <h1>Edit Brand</h1>
     <form class="edit-brand" (ngSubmit)="saveChanges(f)" #f="ngForm">
-            <label for="brand">Brand {{brand.name}}</label><br>
+            <label for="brand">Brand</label><br>
             <input name="brand" id="brand" ngModel="{{brand.name}}" required autocomplete="off"/><br>
             <label for="country">Country</label><br>
             <input name="country" id="country"  ngModel="{{brand.country}}" required autocomplete="off"/><br>
+            <input name="id" type="hidden" ngModel="{{brand.id}}"/><br>
             <button type="submit" [ngClass]='!f.valid ? "invalid" : ""' [disabled]="!f.valid" class="btn btn-success">Save</button>
     </form>
     <a class="btn btn-secondary" [routerLink]="['']">Back</a>
+</div>

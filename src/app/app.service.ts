@@ -28,4 +28,9 @@ export class Service{
     createNewBrand(id: number, name: string, country: string){
         this.brands.push(new Brand(id, name, country));
     }
+    editBrand(id: number, name: string, country: string){
+        const item = this.getSingleBrand(id);
+        item.name = name;
+        item.country = country;
+    }
 }
