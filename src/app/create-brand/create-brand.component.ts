@@ -12,7 +12,7 @@ export class CreateBrandComponent {
 
   constructor(private service: Service, private router: Router) { }
 
-  saveChanges(form: NgForm){
+  createBrand(form: NgForm){
     const id = Date.now();
     const brand = form.value.brand;
     const country = form.value.country;

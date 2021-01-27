@@ -9,8 +9,10 @@ import { AppComponent } from './app.component';
 import { BrandsTableComponent } from './brands-table/brands-table.component';
 import { BrandDetailsComponent } from './brand-details/brand-details.component';
 import { CreateBrandComponent } from './create-brand/create-brand.component';
+import { EditBrandComponent } from './brand-details/edit-brand/edit-brand.component';
 
 const routes: Routes = [
+  { path: 'brand/:id/edit', component: EditBrandComponent },
   { path: 'brand/:id', component: BrandDetailsComponent },
   { path: 'create', component: CreateBrandComponent },
   { path: '', component: BrandsTableComponent }
@@ -22,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     BrandsTableComponent,
     BrandDetailsComponent,
-    CreateBrandComponent
+    CreateBrandComponent,
+    EditBrandComponent
   ],
   imports: [
     BrowserModule,
