@@ -1,4 +1,3 @@
-
 import  BrandType  from './model/brand.interface';
 import { Brand } from './model/brand.model';
 
@@ -18,7 +17,6 @@ export class Service{
         new Brand(10, 'Alfa Romeo', 'Italy'),
         new Brand(11, 'Aston Martin', 'United Kingdom')
     ];
-
     getBrands(): BrandType[]{
         return this.brands.slice();
     }
@@ -36,4 +34,5 @@ export class Service{
         brand.country = country;
         return brand;
     }
+
 }
