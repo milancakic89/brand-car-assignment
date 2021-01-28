@@ -2,6 +2,7 @@
 import  BrandType  from './model/brand.interface';
 import { Brand } from './model/brand.model';
 
+
 export class Service{
     brands: BrandType[] = [
         new Brand(0, 'Honda', 'Japan'),
