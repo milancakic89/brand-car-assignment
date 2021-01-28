@@ -1,6 +1,6 @@
-import BrandType from "./brand.interface";
 
-export class Brand implements BrandType{
+
+export class Brand{
     public id: number;
     public name: string;
     public country: string;
