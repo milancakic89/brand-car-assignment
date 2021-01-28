@@ -31,9 +31,9 @@ export class Service{
         return brand;
     }
     editBrand(id: number, name: string, country: string): BrandType{
-        const item = this.getSingleBrand(id);
-        item.name = name;
-        item.country = country;
-        return item;
+        const brand = this.getSingleBrand(id);
+        brand.name = name;
+        brand.country = country;
+        return brand;
     }
 }
