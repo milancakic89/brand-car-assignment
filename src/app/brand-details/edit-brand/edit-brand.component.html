@@ -1,12 +1,24 @@
 <div class="container">
-    <h1>Edit Brand</h1>
-    <form class="edit-brand" (ngSubmit)="saveChanges(f)" #f="ngForm">
-            <label for="brand">Brand</label><br>
-            <input name="brand" id="brand" ngModel="{{brand.name}}" required autocomplete="off"/><br>
-            <label for="country">Country</label><br>
-            <input name="country" id="country"  ngModel="{{brand.country}}" required autocomplete="off"/><br>
-            <input name="id" type="hidden" ngModel="{{brand.id}}"/><br>
-            <button type="submit" [ngClass]='!f.valid ? "invalid" : ""' [disabled]="!f.valid" class="btn btn-success">Save</button>
-    </form>
-    <a class="btn btn-secondary" [routerLink]="['']">Back</a>
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <h1>Edit Brand</h1>
+            <form class="mb-3 p-2 border border-rounded" (ngSubmit)="saveChanges(f)" #f="ngForm">
+                <div class="form-group">
+                    <label for="brand">Brand</label><br>
+                    <input class="form-control" name="brand" id="brand" ngModel="{{brand.name}}" required autocomplete="off"/>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label><br>
+                    <input class="form-control" name="country" id="country"  ngModel="{{brand.country}}" required autocomplete="off"/>
+                    <input name="id" type="hidden" ngModel="{{brand.id}}"/>
+                </div>
+                    <button type="submit" [ngClass]='!f.valid ? "invalid" : ""' [disabled]="!f.valid" class="btn btn-success">Save</button>
+            </form>
+            <div class="text-center">
+                <a class="btn btn-secondary" [routerLink]="['']">Back</a>
+            </div>
+
+        </div>
+    </div>
+
 </div>

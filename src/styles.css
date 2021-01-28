@@ -5,85 +5,10 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-table{
-    border: 1px solid gray;
-    padding: 0;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-tr{
-    border: 1px solid black;
-}
-th{
-    border: 1px solid black;
-    padding: 10px;
-    text-transform: uppercase;
-    margin: 0;
-}
-td{
-    text-transform: capitalize;
-    border: 1px solid black;
-    padding: 10px;
-}
+
 a{
     text-decoration: none;
     color: rgb(1, 83, 190);
 }
 
-.btn{
-    padding: 10px 15px;
-    border-radius: 4px;
-    display: inline-block;
-    text-decoration: none;
-    margin: 5px 0;
-    cursor: pointer;
-}
-.ml-small{
-    margin-left: 10px;
-}
-.btn-secondary{ 
-    background-color: rgb(83, 83, 83);
-    color: #fff;
-}
-.btn-primary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-.btn-warning{
-    color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107
-}
-.btn-success{
-    color: #fff;
-    background-color: #28a745;
-    border-color: #28a745
-}
-.new-brand,
-.edit-brand{
-    border: 1px solid gray;
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-}
-input{
-    display: inline-block;
-    padding: 7px;
-    margin: 5px 0;
-    width: 100%;
-}
-button{
-    border: none;
-}
 
-.invalid{
-    background-color: gray;
-}

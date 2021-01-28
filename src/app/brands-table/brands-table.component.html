@@ -1,14 +1,23 @@
-<div>
-    <h1>Brands Table</h1>
-    <div class="controls">
-        <a class='btn btn-primary' [routerLink]="['create']">Add New</a>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <h1>Brands Table</h1>
+            <div class="text-right p-1">
+                <a class='btn btn-primary' [routerLink]="['create']">Add New</a>
+            </div>
+            <table class="table table-striped border border-rounded">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Brand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let brand of brands">
+                        <td><a [routerLink]="['brand', brand.id]">{{brand.name}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <table>
-        <tr>
-            <th>Brand</th>
-        </tr>
-        <tr *ngFor="let brand of brands">
-            <td><a [routerLink]="['brand', brand.id]">{{brand.name}}</a></td>
-        </tr>
-    </table>
+
 </div>

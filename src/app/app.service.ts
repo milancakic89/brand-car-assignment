@@ -18,19 +18,21 @@ export class Service{
         new Brand(11, 'Aston Martin', 'United Kingdom')
     ];
 
-    getBrands(){
-        //returning the copy of an array
+    getBrands(): BrandType[]{
         return this.brands.slice();
     }
     getSingleBrand(id: number): BrandType {
         return this.brands.filter(brand => brand.id === id)[0];
     }
-    createNewBrand(id: number, name: string, country: string){
-        this.brands.push(new Brand(id, name, country));
+    createNewBrand(id: number, name: string, country: string): BrandType{
+        const brand = new Brand(id, name, country);
+        this.brands.push(brand);
+        return brand;
     }
-    editBrand(id: number, name: string, country: string){
+    editBrand(id: number, name: string, country: string): BrandType{
         const item = this.getSingleBrand(id);
         item.name = name;
         item.country = country;
+        return item;
     }
 }

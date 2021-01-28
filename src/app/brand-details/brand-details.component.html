@@ -1,20 +1,27 @@
-<h1>Brand details</h1>
+
 <div *ngIf="fetched" class="container">
-    <table>
-        <tr>
-            <th colspan="3">{{ brand.name }}</th>
-        </tr>
-        <tr>
-            <th>ID</th>
-            <th>BRAND</th>
-            <th>COUNTRY</th>
-        </tr>
-        <tr>
-            <td>{{ brand.id }}</td>
-            <td>{{ brand.name }}</td>
-            <td>{{ brand.country }}</td>
-        </tr>
-    </table>
-    <a class="btn btn-warning" [routerLink]="['edit']">Edit</a>
-    <a class="btn btn-secondary ml-small" [routerLink]="['']">Back</a>
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <h1>Brand details</h1>
+            <table class="table table-bordered ">
+                <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>BRAND</th>
+                    <th>COUNTRY</th>
+                </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td>{{ brand.id }}</td>
+                        <td>{{ brand.name }}</td>
+                        <td>{{ brand.country }}</td>
+                    </tr>
+                 </tbody>
+            </table>
+                    <a class="btn btn-warning" [routerLink]="['edit']">Edit</a>
+                    <a class="btn btn-secondary ml-4" [routerLink]="['']">Back</a>         
+        </div>
+    </div>
+   
 </div>
