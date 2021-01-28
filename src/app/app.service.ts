@@ -34,5 +34,4 @@ export class Service{
         brand.country = country;
         return brand;
     }
-
 }

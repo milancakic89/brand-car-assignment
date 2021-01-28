@@ -25,7 +25,6 @@ export class EditBrandComponent implements OnInit {
   })
   }
   saveChanges(form: NgForm){
-    console.log(form.value)
     const id = +form.value.id;
     const brand =  form.value.brand;
     const country = form.value.country;
